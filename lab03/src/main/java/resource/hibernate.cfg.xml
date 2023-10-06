@@ -6,11 +6,11 @@
         <property name = "hibernate.hbm2ddl.auto">create</property>
         <property name="show_sql">true</property>
         <property name = "hibernate.dialect">org.hibernate.dialect.MySQL8Dialect</property>
-        <property name = "hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name = "hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
         <property name = "hibernate.connection.url">jdbc:mysql://localhost:3306/PhoneFactory</property>
         <property name = "hibernate.connection.username">root</property>
         <property name = "hibernate.connection.password">abc123</property>
-        <mapping class = "vn.edu.tdtu.javatech.lab3.domain.Phone"/>
-        <mapping class = "vn.edu.tdtu.javatech.lab3.domain.Manufacturer"/>
+        <mapping class = "lab03.domain.Phone"/>
+        <mapping class = "lab03.domain.Manufacture"/>
     </session-factory>
 </hibernate-configuration>
