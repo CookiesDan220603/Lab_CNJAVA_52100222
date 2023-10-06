@@ -3,6 +3,7 @@ import lab03.dao.PhoneDAO;
 import lab03.domain.Phone;
 public class PhoneFactory {
     public static void main(String[] args) {
+
         System.out.println("them 6 phone vao data");
         PhoneDAO phoneDAO = new PhoneDAO();
         phoneDAO.add(new Phone("iPhone 13 Pro Max", 13000, "Deep Blue", "VN", 20));

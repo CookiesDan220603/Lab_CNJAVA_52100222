@@ -7,4 +7,5 @@ import org.hibernate.criterion.Order;
 
 public class ManufacturerDAO {
     Session session = HibernateUtil.getSessionFactory().openSession();
+
 }

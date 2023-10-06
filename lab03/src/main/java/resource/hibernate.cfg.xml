@@ -10,7 +10,7 @@
         <property name = "hibernate.connection.url">jdbc:mysql://localhost:3306/PhoneFactory</property>
         <property name = "hibernate.connection.username">root</property>
         <property name = "hibernate.connection.password">abc123</property>
-        <mapping class = "vn.edu.tdtu.javatech.lab3.domain.Phone"/>
-        <mapping class = "vn.edu.tdtu.javatech.lab3.domain.Manufacturer"/>
+        <mapping class = "lab03.domain.Phone"/>
+        <mapping class = "lab03.domain.Manufacturer"/>
     </session-factory>
 </hibernate-configuration>
