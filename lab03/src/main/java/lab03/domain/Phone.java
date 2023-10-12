@@ -89,6 +89,6 @@ public class Phone {
                 ", Color='" + Color + '\'' +
                 ", Country='" + Country + '\'' +
                 ", Quantity=" + Quantity +
-                '}';
+                '}'+"\n";
     }
 }

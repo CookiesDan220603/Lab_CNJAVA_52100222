@@ -5,11 +5,11 @@ import javax.validation.constraints.Size;
 
 @Entity
 @Table(name = "Manufacture")
-public class Manufacturer {
+public class Manufacture {
     @Id
     @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    public String ID;
+    public int ID;
     @Column (name = "Name" , nullable = false)
     @Size(min = 3 , max = 128)
     public String Name;
@@ -17,8 +17,7 @@ public class Manufacturer {
     public String Location;
     @Column
     public int Employee;
-    public Manufacturer (String ID, String Name, String Location, int Employee){
-        this.ID = ID;
+    public Manufacture (String Name, String Location, int Employee){
         this.Name = Name;
         this.Location = Location;
         this.Employee = Employee;
@@ -29,7 +28,7 @@ public class Manufacturer {
         this.Name = name;
     }
 
-    public void setID(String ID) {
+    public void setID(int ID) {
         this.ID = ID;
     }
 
@@ -49,7 +48,7 @@ public class Manufacturer {
         return Employee;
     }
 
-    public String getID() {
+    public int getID() {
         return ID;
     }
 
@@ -59,11 +58,11 @@ public class Manufacturer {
 
     @Override
     public String toString() {
-        return "Manufacturer{" +
+        return "Manufactur{" +
                 "ID='" + ID + '\'' +
                 ", Name='" + Name + '\'' +
                 ", Location='" + Location + '\'' +
                 ", Employee=" + Employee +
-                '}';
+                '}' +"\n";
     }
 }
