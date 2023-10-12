@@ -22,5 +22,20 @@
       <scope>provided</scope>
     </dependency>
 
+<<<<<<< HEAD:lab04/pom.xml
+=======
+    <dependency>
+      <groupId>org.json</groupId>
+      <artifactId>json</artifactId>
+      <version>20220320</version>
+
+    </dependency>
+    <dependency>
+      <groupId>com.google.code.gson</groupId>
+      <artifactId>gson</artifactId>
+      <version>2.2.2</version>
+      <scope>compile</scope>
+    </dependency>
+>>>>>>> 3ac9dd0ef6eff5ce39c852e4181ae120a6f92d61:lab04/lab04_ex1_4/pom.xml
   </dependencies>
 </project>
