@@ -5,27 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3fc69daf-386d-4029-9131-5cc861784018" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jpa-buddy.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DownloadServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ImageServlet1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ImageServlet2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/LoginServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ProductServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module/Product.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/cat.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/dog.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/register.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/upload.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/LoginServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/register.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/upload.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +60,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "H:/Code/CNJava/CNJava_LT_TH/TH/Lab_CNJAVA_52100222/Lab04/lab04_ex1_4",
+    "last_opened_file_path": "E:/CNjava/CNJava_LT_TH/TH/Lab_CNJAVA_52100222/lab04/lab04_ex1_4",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
