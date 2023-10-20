@@ -1,7 +1,7 @@
-package Servlet;
+package main.Servlet;
 
-import DAO.UserDAO;
-import Model.User;
+import main.DAO.UserDAO;
+import main.Model.User;
 import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
@@ -19,7 +19,7 @@ public class LoginServlet extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String username = req.getParameter("username");
         String password = req.getParameter("password");
-        System.out.print(username+"    "+password +"\n");
+
 
         String messageErr = "";
         User user = userDAO.read(username);
@@ -29,8 +29,8 @@ public class LoginServlet extends HttpServlet {
         }
 
         else{
-            System.out.println(user.getPassword());
-            if(user.getPassword() != null && user.getPassword().equals(password)){
+            if(user.getPassword()!= null && user.getPassword().equals(password)){
+                System.out.print(username+"    "+password +"\n");
                 Cookie ck = new Cookie("username",username);
                 Cookie ck1 = new Cookie("password",password);
                 // set due time 30 days

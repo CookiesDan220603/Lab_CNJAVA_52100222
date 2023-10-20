@@ -1,7 +1,7 @@
-package DAO;
+package main.DAO;
 
 import utils.HibernateUtils;
-import Model.Product;
+import main.Model.Product;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
@@ -13,7 +13,7 @@ public class ProductDAO {
 
     public static ProductDAO getInstance() {
         session = HibernateUtils.getSessionFactory().openSession();
-        transaction = null;
+        transaction = session.beginTransaction();
         return new ProductDAO();
     }
 
@@ -49,10 +49,15 @@ public class ProductDAO {
         return false;
     }
     public List<Product> readAll() {
-        return session.createQuery("SELECT a FROM Product a", Product.class).getResultList();
+        if (session != null && session.isOpen()) {
+            return session.createQuery("SELECT a FROM Product a", Product.class).getResultList();
+        }
+        return null; // Hoặc trả về danh sách rỗng tùy thuộc vào yêu cầu của ứng dụng của bạn
     }
 
     public void close() {
-        session.close();
+        if (session != null && session.isOpen()) {
+            session.close();
+        }
     }
 }

@@ -1,15 +1,16 @@
-package DAO;
+package main.DAO;
 
-import Model.User;
+import main.Model.User;
+import main.Model.User;
 import utils.HibernateUtils;
 import org.hibernate.*;
 public class UserDAO {
     private static Session session;
     private static Transaction transaction;
-    public static UserDAO getInstance(){
+    public static UserDAO getInstance() {
         session = HibernateUtils.getSessionFactory().openSession();
         transaction = null;
-        return  new UserDAO();
+        return new UserDAO();
     }
     public boolean add(User item) {
         try{
@@ -28,7 +29,7 @@ public class UserDAO {
     public User read(String username) {
         try{
             transaction = session.beginTransaction();
-            User user = session.byId(User.class).getReference(username);
+            User user = session.get(User.class,username);
             transaction.commit();
             return user;
         } catch (Exception e) {
