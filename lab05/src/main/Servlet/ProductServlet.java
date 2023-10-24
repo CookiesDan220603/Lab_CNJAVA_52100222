@@ -43,12 +43,12 @@ public class ProductServlet extends HttpServlet {
         response.getWriter().write(json);
     }
     public void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        String name = req.getParameter("product-name");
-        String price = req.getParameter("product-price");
+        String name = req.getParameter("name");
+        String price = req.getParameter("price");
         String message = "";
         System.out.println(name + " " + price);
         // Post add new prod
-        if (!(Objects.equals(name, "") || !(Objects.equals(price,"")))) {
+        if (!Objects.equals(name,"") && !Objects.equals(price,"")) {
             System.out.println(name + " " + price);
             Product newProduct = new Product(name,Integer.parseInt(price));
             productDAO.add(newProduct);
@@ -57,11 +57,9 @@ public class ProductServlet extends HttpServlet {
         }
 
         // Show all prod
-        req.setAttribute("message", message);
-        List<Product> listProducts = productDAO.readAll();
-        req.setAttribute("listProducts", listProducts);
-        RequestDispatcher rd = req.getRequestDispatcher("/index.html");
-        rd.forward(req, resp);
+        List<Product> products = (List<Product>) productDAO.readAll();
+        req.setAttribute("products", products);
+        req.getRequestDispatcher("index.jsp").forward(req, resp);
     }
     public void destroy(){
         productDAO.close();

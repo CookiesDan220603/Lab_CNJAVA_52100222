@@ -31,14 +31,15 @@ public class LoginServlet extends HttpServlet {
         else{
             if(user.getPassword()!= null && user.getPassword().equals(password)){
                 System.out.print(username+"    "+password +"\n");
-                Cookie ck = new Cookie("username",username);
-                Cookie ck1 = new Cookie("password",password);
-                // set due time 30 days
-                ck.setMaxAge(2592000);
-                ck1.setMaxAge(2592000);
-                resp.addCookie(ck);
-                resp.addCookie(ck1);
-                RequestDispatcher dispatcher = req.getRequestDispatcher("/index.html");
+//                Cookie cookie = new Cookie("username", username);
+//                cookie.setMaxAge(60 * 60 * 24 * 30); // 30 days
+//                resp.addCookie(cookie);
+                Cookie cookie = new Cookie("username", username);
+                cookie.setMaxAge(60 * 60 * 24 * 30); // 30 days
+                resp.addCookie(cookie);
+                req.getSession().setAttribute("username", username);
+                req.setAttribute("username", username);
+                RequestDispatcher dispatcher = req.getRequestDispatcher("/index.jsp");
                 dispatcher.forward(req,resp);
             }
             else {

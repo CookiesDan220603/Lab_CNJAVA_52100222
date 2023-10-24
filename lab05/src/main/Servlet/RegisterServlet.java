@@ -16,7 +16,7 @@ public class RegisterServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         if (request.getSession().getAttribute("username") != null) {
-            request.getRequestDispatcher("index.html").forward(request, response);
+            request.getRequestDispatcher("index.jsp").forward(request, response);
         } else {
             request.getRequestDispatcher("register.html").forward(request, response);
         }
