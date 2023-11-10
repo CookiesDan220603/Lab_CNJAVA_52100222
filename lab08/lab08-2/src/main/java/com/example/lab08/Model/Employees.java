@@ -2,17 +2,15 @@ package com.example.lab08.Model;
 
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 import org.springframework.stereotype.Component;
 
+@Data
 @Entity
-@Table(name = "employees")
+@AllArgsConstructor
+@Table(name = "employee")
 @Getter
 @Setter
-@Component
-@AllArgsConstructor
 public class Employees {
 
     @Id

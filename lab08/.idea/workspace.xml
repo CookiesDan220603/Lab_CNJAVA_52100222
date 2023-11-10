@@ -5,14 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4f35277e-ff32-483e-8dbd-dab8a97b82e5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/lab08-2/Docker/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab08-2/src/main/java/com/example/lab08/Controller/EmployeeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab08-2/src/main/java/com/example/lab08/Model/Employees.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab08-2/src/main/java/com/example/lab08/Repository/EmployeeRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab08-2/src/main/java/com/example/lab08/Service/EmployeeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab08-2/src/main/java/com/example/lab08/Service/EmployeeServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab08-2/src/main/resources/templates/add.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab08-2/src/main/resources/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab08-2/src/main/resources/static/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab08-2/src/main/java/com/example/lab08/Controller/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab08-2/src/main/java/com/example/lab08/Controller/EmployeeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab08-2/src/main/java/com/example/lab08/Lab08Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab08-2/src/main/java/com/example/lab08/Lab08Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab08-2/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/lab08-2/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -18,23 +18,23 @@ public class EmployeeController {
     private EmployeeServiceImpl employeeServiceImp;
     @GetMapping("")
     public String getHomePage(){
-        return "redirect:/employee";
+        return "index";
     }
     @GetMapping("/employee")
     public String getAllEmployee(Model model){
         model.addAttribute("employees",employeeServiceImp.findAll());
         return "index";
     }
-//    @GetMapping("/employee/add")
-//    public String getAddEmployee(Model model){
-//        model.addAttribute("employee",new Employees());
-//        return "add";
-//    }
-//    @PostMapping("/employee/add")
-//    public String postAddEmployee(@ModelAttribute Employees employee){
-//        employeeServiceImp.save(employee);
-//        return "redirect:/employee";
-//    }
+    @GetMapping("/employee/add")
+    public String getAddEmployee(Model model){
+        model.addAttribute("employee",new Employees());
+        return "index";
+    }
+    @PostMapping("/employee/add")
+    public String postAddEmployee(@ModelAttribute Employees employee){
+        employeeServiceImp.save(employee);
+        return "redirect:/employee";
+    }
 //    @GetMapping("/employee/edit/{id}")
 //    public String getEditEmployee(@PathVariable("id") int id,Model model){
 //        model.addAttribute("employee",employeeServiceImp.findById(id));
