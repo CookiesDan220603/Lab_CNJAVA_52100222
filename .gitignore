@@ -1,0 +1,33 @@
+/springcomerce/HELP.md
+/springcomerce/target/
+/springcomerce/!./mvn/wrapper/maven-wrapper.jar
+/springcomerce/!**/src/main/**/target/
+/springcomerce/!**/src/test/**/target/
+
+### STS ###
+/springcomerce/.apt_generated
+/springcomerce/.classpath
+/springcomerce/.factorypath
+/springcomerce/.project
+/springcomerce/.settings
+/springcomerce/.springBeans
+/springcomerce/.sts4-cache
+
+### IntelliJ IDEA ###
+/springcomerce/.idea
+/springcomerce/*.iws
+/springcomerce/*.iml
+/springcomerce/*.ipr
+
+### NetBeans ###
+/springcomerce/nbproject/private/
+/springcomerce/nbbuild/
+/springcomerce/dist/
+/springcomerce/nbdist/
+/springcomerce/.nb-gradle/
+/springcomerce/build/
+/springcomerce/!**/src/main/**/build/
+/springcomerce/!**/src/test/**/build/
+
+### VS Code ###
+/springcomerce/.vscode/
