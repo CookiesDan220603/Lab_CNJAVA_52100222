@@ -1,33 +1,33 @@
-/springcomerce/HELP.md
-/springcomerce/target/
-/springcomerce/!./mvn/wrapper/maven-wrapper.jar
-/springcomerce/!**/src/main/**/target/
-/springcomerce/!**/src/test/**/target/
+/SpringComerce/HELP.md
+/SpringComerce/target/
+/SpringComerce/!./mvn/wrapper/maven-wrapper.jar
+/SpringComerce/!**/src/main/**/target/
+/SpringComerce/!**/src/test/**/target/
 
 ### STS ###
-/springcomerce/.apt_generated
-/springcomerce/.classpath
-/springcomerce/.factorypath
-/springcomerce/.project
-/springcomerce/.settings
-/springcomerce/.springBeans
-/springcomerce/.sts4-cache
+/SpringComerce/.apt_generated
+/SpringComerce/.classpath
+/SpringComerce/.factorypath
+/SpringComerce/.project
+/SpringComerce/.settings
+/SpringComerce/.springBeans
+/SpringComerce/.sts4-cache
 
 ### IntelliJ IDEA ###
-/springcomerce/.idea
-/springcomerce/*.iws
-/springcomerce/*.iml
-/springcomerce/*.ipr
+/SpringComerce/.idea
+/SpringComerce/*.iws
+/SpringComerce/*.iml
+/SpringComerce/*.ipr
 
 ### NetBeans ###
-/springcomerce/nbproject/private/
-/springcomerce/nbbuild/
-/springcomerce/dist/
-/springcomerce/nbdist/
-/springcomerce/.nb-gradle/
-/springcomerce/build/
-/springcomerce/!**/src/main/**/build/
-/springcomerce/!**/src/test/**/build/
+/SpringComerce/nbproject/private/
+/SpringComerce/nbbuild/
+/SpringComerce/dist/
+/SpringComerce/nbdist/
+/SpringComerce/.nb-gradle/
+/SpringComerce/build/
+/SpringComerce/!**/src/main/**/build/
+/SpringComerce/!**/src/test/**/build/
 
 ### VS Code ###
-/springcomerce/.vscode/
+/SpringComerce/.vscode/
