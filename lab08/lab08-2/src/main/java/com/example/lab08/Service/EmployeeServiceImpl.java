@@ -1,34 +1,35 @@
 package com.example.lab08.Service;
 
 
-import com.example.lab08.Model.Employees;
+import com.example.lab08.Model.Employee;
+import com.example.lab08.Repository.EmployeeRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Example;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
+import org.springframework.data.repository.query.FluentQuery;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
-@Component
+import java.util.List;
+import java.util.Optional;
+import java.util.function.Function;
+
 @Service
 public class EmployeeServiceImpl {
     private EmployeeService employeeService;
 
-    public EmployeeServiceImpl(EmployeeService employeeService) {
-        this.employeeService = employeeService;
+    public Employee save(Employee employee){
+        return employeeService.save(employee);
     }
-
-    public void init(){
-        save(new Employees("a.@gmail.com","Tan phong, quan 7","0141414561","Tran Van Thao"));
-        save(new Employees("b.@gmail.com","Tan phong, quan 7","01244219744","Tran Van Teo"));
-        save(new Employees("c.@gmail.com","Tan phong, quan 7","014141423561","Tran Van Lord"));
-    }
-
-    public Employees save(Employees employees){
-        return employeeService.save(employees);
-    }
-    public Iterable<Employees> findAll(){
+    public Iterable<Employee> findAll(){
         return employeeService.findAll();
     }
-    public Employees findByid(int id){return employeeService.findById(id).get();}
 
-    public void deleteById(int id){
+    public Employee findById(Long id) {return employeeService.findById(id).get();}
+
+    public void deleteById(Long id) {
         employeeService.deleteById(id);
     }
 }

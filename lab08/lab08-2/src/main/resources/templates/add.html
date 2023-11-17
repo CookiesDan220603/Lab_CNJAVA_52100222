@@ -67,25 +67,25 @@
           <div class="form-group">
             <label>Name</label>
             <label>
-              <input type="text" th:field="*{name}" class="form-control" required>
+              <input type="text" th:field="*{name}" class="form-control" name="name" required>
             </label>
           </div>
           <div class="form-group">
             <label>Email</label>
             <label>
-              <input type="email" th:field="*{email}" class="form-control" required>
+              <input type="email" th:field="*{email}" class="form-control" name="email" required>
             </label>
           </div>
           <div class="form-group">
             <label>Address</label>
             <label>
-              <textarea class="form-control" required th:field="*{address}"></textarea>
+              <textarea class="form-control" required th:field="*{address}" name="address"></textarea>
             </label>
           </div>
           <div class="form-group">
             <label>Phone</label>
             <label>
-              <input type="text" class="form-control" th:field="*{phone}" required>
+              <input type="text" class="form-control" th:field="*{phone}"  name="phone" required>
             </label>
           </div>
         </div>
